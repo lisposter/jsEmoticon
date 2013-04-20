@@ -5,7 +5,7 @@ A javascript lib for replace string to emotion icon.
 * Custom smilies tags and names
 * Custom smilies's location
 * Non-English characters supported
-
+* Support all of web site applications
 
 ## How to use
 1.   download and put the js file in your web dir.
