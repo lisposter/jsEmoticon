@@ -18,7 +18,7 @@
 		]
 	}
 
-	var emLength = _cfg.emotions.length;
+
 
 	function replacer(em, index) {
 		var metachars = /[[\]{}()*+?.\\|^$\-,&#\s]/g;
@@ -29,7 +29,8 @@
 		var modString = origString.replace(em.smilies, '<img src="' + _cfg.path + em.filename + '" />');
 		targetNode.innerHTML = modString;
 	}
-
+	
+	var emLength = _cfg.emotions.length;
 	for (var i = emLength - 1; i >= 0; i--) {
 		replacer(_cfg.emotions[i], i)
 	};
