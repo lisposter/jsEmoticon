@@ -1,7 +1,13 @@
 (function () {
 	var _cfg = {
+		//the id of the html tag which contain your text.
 		domID: 'content',
+
+		//the location of your smilies images.
 		path: 'http://zhuli.me/wp-content/themes/evolz/images/smilies/',
+
+		//all of the smilies' definition.
+		//smilies: the tag you will used in your text; filename: the smilies's filename.
 		emotions: [
 			{smilies: ':ali啊啊啊:', filename: 'ali_aaa.gif'},
 			{smilies: ':ali闭嘴:', filename: 'ali_bizui.gif'},
