@@ -4,7 +4,7 @@
 		domID: 'content',
 
 		//the location of your smilies images.
-		path: 'http://zhuli.me/wp-content/themes/evolz/images/smilies/',
+		path: '/path/to/smilies/position/',
 
 		//all of the smilies' definition.
 		//smilies: the tag you will used in your text; filename: the smilies's filename.
@@ -16,11 +16,11 @@
 			{smilies: '[ali嘲弄]', filename: 'ali_chaonong.gif'},
 			{smilies: '[ali大汗]', filename: 'ali_dahan.gif'}
 		]
-	}
+	};
 
 
 
-	function replacer(em, index) {
+	var replacer = function(em, index) {
 		var metachars = /[[\]{}()*+?.\\|^$\-,&#\s]/g;
 		var pattern = em.smilies.replace(metachars, "\\$&");
 		var targetNode = document.getElementById(_cfg.domID);
